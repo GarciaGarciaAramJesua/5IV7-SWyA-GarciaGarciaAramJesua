@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Viggenere</title>
+    <link rel="stylesheet" href="css/viggenere.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+<header>
+    <div class="tituloxd">CIFRADO VIGGENERE</div>
+    <div class="cif">
+        Aquí podrá encontrar dos ejemplos del cifrado simétrico, el Cifrado César y el Cifrado Viggenere:
+        El cifrado Vigenère es un cifrado basado en diferentes series de caracteres o letras del cifrado César formando estos caracteres una tabla, llamada tabla de Vigenère, que se usa como clave. El cifrado de Vigenère es un cifrado polialfabético y de sustitución. El sistema de Alberti sólo cambiaba entre alfabetos después de muchas palabras, y los cambios se indicaban escribiendo la letra del correspondiente alfabeto en el mensaje cifrado.
+    </div>
+    <div class="tipcif">
+        <a href="C:\Users\rl9wo\Desktop\5IV7-SWyA-GarciaGarciaAramJesua\01 Cesar\index.html">Cifrado César</a>
+        <a href="index.html">Cifrado Viggenere</a>
+    </div>
+</header>
+<body>
+    <div class="responsive">
+        <div class="ciphercard">
+            <div class="pergacipher">
+                <article>Ingrese el texto que desea cifrar/descifrar:</article>
+                <textarea id="mess" cols="10" rows="10" class="textoacif"></textarea>
+                <br>
+                <article>Ahora, la clave para cifrar/descifrar el texto:</article>
+                <input type="text" placeholder="Llave" id="llave" class="llave">
+            </div>
+            <input type="button" value="Cifrar" id="cifrar" class="Cifrar">
+        </div>    
+        <div class="deciphercard">
+            <div class="pergadecipher">
+                <article>El resultado del cifrado de tipo Viggenere es: </article>
+                <input type="text" id="rs" class="textoyacif" readonly>    
+            </div>
+            <input type="button" value="Descifrar" id="descifrar" class="Descifrar">
+        </div>
+    </div>
+    <footer class="footer">
+        García García Aram Jesua 5IV7 César y Viggenere
+    </footer>
+    <script src="./js/viggenere.js"></script>
+</body>
+</html>

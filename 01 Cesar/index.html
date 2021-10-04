@@ -4,34 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo Cesar</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Cifrado César</title>
+    <link rel="stylesheet" href="css/cesar.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
-<body>
-    Este es un ejemplo para poder cifrar un texto con el algoritmo de césar.
-    P.D. tengo sueñito
-
-    Tarea:
-
-    Voy a querer que no sea constante el desplazamiento y que lo pueda ingresar
-    adentro de un campo de texto, deberan de aplicar la operacion modulo
-    si me paso de 27 letras
-
-    desp  mod 27 
-
-    porque van a agregar la ñ
-    <br>
-    <textarea id="cadena" cols="30" rows="10"></textarea>
-    <br>
-    <p><input type="button" value="Cifrar" onclick="cifrar()" >
-        <input type="button" value="Descifrar" onclick="descifrar()" ></p>
-    <div id="resultado" >
-
+<header>
+    <div class="tituloxd">CIFRADO CÉSAR</div>
+    <div class="cif">
+        Aquí podrá encontrar dos ejemplos del cifrado simétrico, el Cifrado César y el Cifrado Viggenere:
+        En criptografía, el cifrado César, también conocido como cifrado por desplazamiento, código de César o desplazamiento de César, es una de las técnicas decodificación más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la A), la B sería reemplazada por la E, etc. Este método debe su nombre, según Suetonio, a Julio César, que lo usaba para comunicarse con sus generales.
     </div>
-
+    <div class="tipcif">
+        <a href="index.html">Cifrado César</a>
+        <a href="C:\Users\rl9wo\Desktop\5IV7-SWyA-GarciaGarciaAramJesua\02 Viggenere\index.html">Cifrado Viggenere</a>
+    </div>
+</header>
+<body>
+    <div class="responsive">
+        <div class="ciphercard">
+            <div class="pergacipher">
+                <article>Ingrese el texto que desea cifrar/descifrar:</article>
+                <textarea id="cadena" cols="10" rows="10" class="textoacif"></textarea>
+                <br>
+                <article>Ahora, el dezplazamiento de las letras en el texto:</article>
+                <input type="number" placeholder="0" id="desplaza" class="desplazamiento">
+            </div>
+            <input type="button" class="cifrado" value="Cifrar" onclick="cifrar()">
+        </div>    
+        <div class="deciphercard">
+            <div class="pergadecipher">
+                <article>El resultado del cifrado de tipo César es: </article>    
+                <div id="resultado" class="textoyacif" readonly></div>
+            </div>
+            <input type="button" class="cifrado" value="Descifrar" onclick="descifrar()">
+        </div>
+    </div>
+    <footer class="footer">
+        García García Aram Jesua 5IV7 César y Viggenere
+    </footer>
     <script src="js/cesar.js" ></script>
 </body>
 </html>
